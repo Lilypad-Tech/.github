@@ -1,0 +1,55 @@
+title: "[RP-issue form] "
+labels: ["RP support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+  - type: textarea
+    id: Description
+    attributes:
+      label: Describe the problem.
+      description: "Describe the problem faced by the RP in order to help speed up support from our team."
+      value: |
+      render: bash
+    validations:
+      required: true
+        - type: markdown
+    attributes:
+      value: |
+        Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+  - type: textarea
+    id: RP info
+    attributes:
+      label: RP hardware and software info
+      description: "Provide info about the hardware used in the RP and lilypad version running"
+      value: |
+      render: bash
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+  - type: textarea
+    id: ETH address
+    attributes:
+      label: Eth address (Wallet address)
+      description: "Provide the ETH (wallet) address for the RP and any relavant on-chain transactions."
+      value: |
+      render: bash
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+  - type: textarea
+    id: Logs
+    attributes:
+      label: RP logs
+      description: "Paste in logs from bacalhau and lilypad-resource-provider"
+      value: |
+      render: bash
+    validations:
+      required: true
