@@ -25,24 +25,7 @@ body:
   - type: textarea
     id: RP info
     attributes:
-      label: PRovide details about the RP
+      label: Provide details about the RP
       description: "Please provide detailed info about the RP hardware (GPU, CPU, etc.) as well as Lilypad version running on the RP."
     validations:
       required: true
-  - type: textarea
-    id: Blockchain/Eth address
-    attributes:
-      label: Which area of this project could be most improved?
-       description: "Please include the wallet address for the affected RP and any transaction hashes that are relevant to the problem."
-    validations:
-      required: true
-type: textarea
-    id: RP logs
-    attributes:
-      label: Logs from lilypad-resource-provider and bacalhau
-       description: " Please include log outputs from the lilypad-resource-provider and bacalhau."
-    validations:
-      required: true
-
-
-      
