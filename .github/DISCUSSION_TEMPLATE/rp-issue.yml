@@ -1,6 +1,5 @@
-title: "[rp-issue]"
-description: ["Report an issue with a Lilypad RP"]
-labels: ['triage: bug']
+title: "[rp-issue] "
+labels: ["rp-issue form"]
 body:
   - type: markdown
     attributes:
@@ -10,27 +9,44 @@ body:
     id: Issue-description
     attributes:
       label: Describe the problem
-      description: A clear and concise description of the problem faced.
-      placeholder: Description
+      description: "A clear and concise description of the problem faced."
+      value: |
+        1.
+        2.
+        ...
+      render: bash
     validations:
       required: true
-  - type: textarea
-    id: RP Info
+  - type: markdown
     attributes:
-      label: RP Info
+      value: |
+        ## Markdown header
+        And some more markdown
+  - type: input
+    id: RP info
+    attributes:
+      label: PRovide details about the RP
       description: Please provide detailed info about the RP hardware (GPU, CPU, etc.) as well as Lilypad version running on the RP.
-      placeholder: RP Info
     validations:
       required: true
   - type: textarea
     id: Blockchain/Eth address
     attributes:
-      label: Blockchain/Eth address
-      description: Please include the wallet address for the affected RP and any transaction hashes that are relevant to the problem.
-      render: shell
+      label: Which area of this project could be most improved?
+       description: Please include the wallet address for the affected RP and any transaction hashes that are relevant to the problem.
+    validations:
+      required: true
   - type: textarea
-    id: Logs
     attributes:
       label: Logs
-      description: Please include log outputs from the lilypad-resource-provider and bacalhau.
-      render: shell
+      options:
+        - label: RP logs
+          required: true
+        - label: Please include log outputs from the lilypad-resource-provider and bacalhau.
+  - type: markdown
+    attributes:
+      value: |
+        ### The thrilling conclusion
+        _to our template_
+
+      
