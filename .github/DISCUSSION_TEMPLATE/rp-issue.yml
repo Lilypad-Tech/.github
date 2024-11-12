@@ -14,7 +14,7 @@ body:
       render: bash
     validations:
       required: true
-        - type: markdown
+  - type: markdown
     attributes:
       value: |
         Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
