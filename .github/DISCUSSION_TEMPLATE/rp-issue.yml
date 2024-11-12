@@ -17,36 +17,32 @@ body:
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
       value: |
         ## Markdown header
         And some more markdown
-  - type: input
+  - type: textarea
     id: RP info
     attributes:
       label: PRovide details about the RP
-      description: Please provide detailed info about the RP hardware (GPU, CPU, etc.) as well as Lilypad version running on the RP.
+      description: "Please provide detailed info about the RP hardware (GPU, CPU, etc.) as well as Lilypad version running on the RP."
     validations:
       required: true
   - type: textarea
     id: Blockchain/Eth address
     attributes:
       label: Which area of this project could be most improved?
-       description: Please include the wallet address for the affected RP and any transaction hashes that are relevant to the problem.
+       description: "Please include the wallet address for the affected RP and any transaction hashes that are relevant to the problem."
     validations:
       required: true
-  - type: textarea
+type: textarea
+    id: RP logs
     attributes:
-      label: Logs
-      options:
-        - label: RP logs
-          required: true
-        - label: Please include log outputs from the lilypad-resource-provider and bacalhau.
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      label: Logs from lilypad-resource-provider and bacalhau
+       description: " Please include log outputs from the lilypad-resource-provider and bacalhau."
+    validations:
+      required: true
+
 
       
