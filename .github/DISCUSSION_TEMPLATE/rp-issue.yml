@@ -6,6 +6,15 @@ body:
       value: |
         ## Issue Submission Form
         Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+  
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: Describe the problem
+      description: "Describe the problem faced by the RP in order to help speed up support from our team."
+      value: "Please describe your issue here..."
+    validations:
+      required: true
 
   - type: checkboxes
   id: Preflight check
@@ -17,15 +26,6 @@ body:
       required: false
   validations:
     required: true
-  
-  - type: textarea
-    id: problem_description
-    attributes:
-      label: Describe the problem
-      description: "Describe the problem faced by the RP in order to help speed up support from our team."
-      value: "Please describe your issue here..."
-    validations:
-      required: true
 
   - type: textarea
     id: rp_info
