@@ -1,4 +1,4 @@
-name: "[rp-issue form]"
+title: "[rp-issue form]"
 labels: ["rp support"]
 body:
   - type: markdown
