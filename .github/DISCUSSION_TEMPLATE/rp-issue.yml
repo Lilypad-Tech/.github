@@ -21,7 +21,7 @@ body:
       description: "bacalhau and lilypad-resource-provider have been stopped and then started again, the Arbitrum Sepolia ETH and LP balances are sufficient to run a node, the node runs Proof of Works with both the start transaction 0xab098945 and ending 0xda8accf9 (view on arbiscan) "
       options:
         - label: "Yes"
-          required: false
+          required: true
     validations:
       required: true
   - type: textarea
