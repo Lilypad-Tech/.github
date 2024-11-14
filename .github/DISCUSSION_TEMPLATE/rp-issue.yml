@@ -1,55 +1,55 @@
 title: "[RP-issue form]"
 labels: ["RP support"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## Issue Submission Form
-        Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
-  
-  - type: textarea
-    id: problem_description
-    attributes:
-      label: Describe the problem
-      description: "Describe the problem faced by the RP in order to help speed up support from our team."
-      value: "Please describe your issue here..."
-    validations:
-      required: true
-
-  - type: checkboxes
-  id: Preflight check
+- type: markdown
   attributes:
-    label: Ensure all steps below are taken and check this box yes when completed:
-    description: "bacalhau and lilypad-resource-provider have been stopped and then started again, the Arbitrum Sepolia ETH and LP balances are sufficient to run a node, the node runs Proof of Works with both the start transaction 0xab098945 and ending 0xda8accf9 (view on arbiscan) "
-  options:
-    - label: "Yes"
-      required: false
+    value: |
+      ## Issue Submission Form
+      Fill out this discussion form below to submit an issue for the team to review! This will be used by our team to keep track of the issue.
+
+- type: textarea
+  id: problem_description
+  attributes:
+    label: Describe the problem
+    description: "Describe the problem faced by the RP in order to help speed up support from our team."
+    value: "Please describe your issue here..."
   validations:
     required: true
 
-  - type: textarea
-    id: rp_info
-    attributes:
-      label: RP hardware and software info
-      description: "how many GPUs are used in the system, what kind of GPU, lilypad version on the RP, OS, networking (VPN)"
-      value: "Hardware specs:\nLilypad version:"
-    validations:
-      required: true
+- type: checkboxes
+id: Preflight check
+attributes:
+  label: Ensure all steps below are taken and check this box yes when completed:
+  description: "bacalhau and lilypad-resource-provider have been stopped and then started again, the Arbitrum Sepolia ETH and LP balances are sufficient to run a node, the node runs Proof of Works with both the start transaction 0xab098945 and ending 0xda8accf9 (view on arbiscan) "
+options:
+  - label: "Yes"
+    required: false
+validations:
+  required: true
 
-  - type: textarea
-    id: eth_address
-    attributes:
-      label: Eth address (Wallet address)
-      description: "Provide the ETH (wallet) address for the RP and links to relevant on-chain transactions on arbiscan."
-      value: "ETH Address:\nRelevant transactions:"
-    validations:
-      required: true
+- type: textarea
+  id: rp_info
+  attributes:
+    label: RP hardware and software info
+    description: "how many GPUs are used in the system, what kind of GPU, lilypad version on the RP, OS, networking (VPN)"
+    value: "Hardware specs:\nLilypad version:"
+  validations:
+    required: true
 
-  - type: textarea
-    id: rp_logs
-    attributes:
-      label: RP logs
-      description: "Paste in logs from bacalhau and lilypad-resource-provider (as much as possible on Github)"
-      value: "Paste your logs here..."
-    validations:
-      required: true
+- type: textarea
+  id: eth_address
+  attributes:
+    label: Eth address (Wallet address)
+    description: "Provide the ETH (wallet) address for the RP and links to relevant on-chain transactions on arbiscan."
+    value: "ETH Address:\nRelevant transactions:"
+  validations:
+    required: true
+
+- type: textarea
+  id: rp_logs
+  attributes:
+    label: RP logs
+    description: "Paste in logs from bacalhau and lilypad-resource-provider (as much as possible on Github)"
+    value: "Paste your logs here..."
+  validations:
+    required: true
