@@ -1,5 +1,5 @@
-name: "[RP-issue form]"
-labels: ["RP support"]
+name: "[rp-issue form]"
+labels: ["rp support"]
 body:
   - type: markdown
     attributes:
